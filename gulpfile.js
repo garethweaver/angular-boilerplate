@@ -92,5 +92,5 @@ gulp.task('ts:watch', () => {
   gulp.watch(['./src/app/**/*.ts'], ['ts:compile'])
 });
 
-gulp.task('build',['html:move', 'libs:move  ', 'sass:compile', 'ts:compile'])
+gulp.task('build',['html:move', 'libs:move', 'sass:compile', 'ts:compile'])
 gulp.task('watch',['html:watch', 'sass:watch', 'ts:watch'])
