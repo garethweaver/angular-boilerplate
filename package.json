@@ -7,18 +7,6 @@
     "start": "gulp clean && gulp build && concurrently \"gulp watch\" \"lite-server\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "browserify": {
-    "transform": [
-      [
-        "babelify",
-        {
-          "presets": [
-            "es2015"
-          ]
-        }
-      ]
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/garethweaver/angular-boilerplate.git"
