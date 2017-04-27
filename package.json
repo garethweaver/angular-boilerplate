@@ -28,10 +28,12 @@
     "gulp-autoprefixer": "^3.1.1",
     "gulp-pug": "^3.3.0",
     "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
     "lite-server": "^2.3.0",
     "merge-stream": "^1.0.1",
     "tsify": "^3.0.1",
     "typescript": "^2.2.2",
+    "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {

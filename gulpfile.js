@@ -2,8 +2,10 @@ const gulp = require('gulp')
 const del = require('del')
 const merge = require('merge-stream')
 const source = require('vinyl-source-stream')
+const buffer = require('vinyl-buffer')
 const pug = require('gulp-pug')
 const browserify = require('browserify')
+const uglify = require('gulp-uglify')
 const babelify = require('babelify')
 const tsify = require('tsify')
 const sass = require('gulp-sass')
@@ -74,9 +76,7 @@ gulp.task('ts:compile', () => {
   return browserify({
       basedir: '.',
       debug: true,
-      entries: ['src/app/main.ts'],
-      cache: {},
-      packageCache: {}
+      entries: ['src/app/main.ts']
     })
     .plugin(tsify)
     .transform('babelify', {
@@ -85,6 +85,8 @@ gulp.task('ts:compile', () => {
     })
     .bundle()
     .pipe(source('app/main.js'))
+    .pipe(buffer())
+    .pipe(uglify({ mangle: false }))
     .pipe(gulp.dest('dist'))
 })
 

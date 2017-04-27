@@ -6,12 +6,12 @@
     "noEmitOnError": true,
     "noImplicitAny": false,
     "outDir": "./dist",
-    "rootDir": ".",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
     "sourceMap": false,
-    "lib": ["dom", "es6"]
+    "lib": ["dom", "es6"],
+    "rootDirectory": "./src"
   },
   "exclude": [
     "node_modules"
