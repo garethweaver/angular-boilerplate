@@ -1,18 +1,17 @@
 {
   "compilerOptions": {
-    "declaration": false,
     "module": "es6",
     "moduleResolution": "node",
-    "noEmitOnError": true,
-    "noImplicitAny": false,
-    "outDir": "./dist",
-    "emitDecoratorMetadata": true,
+    "target": "es6",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "removeComments": false,
     "experimentalDecorators": true,
-    "target": "es5",
-    "sourceMap": false,
-    "lib": ["dom", "es6"],
-    "rootDirectory": "./src"
+    "emitDecoratorMetadata": true
   },
+  "include": [
+    "src/**/*.ts"
+  ],
   "exclude": [
     "node_modules"
   ]

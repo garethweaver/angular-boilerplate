@@ -1,0 +1,10 @@
+require('./assets/style/screen')
+
+import 'core-js';
+import 'zone.js';
+
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app.module';
+
+const bootstrapPromise =  platformBrowserDynamic().bootstrapModule(AppModule);
+bootstrapPromise.then().catch(err => console.error(err));
