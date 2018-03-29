@@ -1,5 +1,5 @@
 {
-  "name": "angular-boilerplate",
+  "name": "boilerplate-angular",
   "version": "1.0.0",
   "description": "Minimal Angular boilerplate on Webpack 4",
   "main": "index.js",
