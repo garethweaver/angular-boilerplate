@@ -48,7 +48,6 @@ module.exports = {
 
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new HtmlWebpackPlugin({ template: path.join(PATHS.src, 'index.html') }),
-    new webpack.ContextReplacementPlugin(/\@angular(\\|\/)core(\\|\/)esm5/, path.join(__dirname, './client'))
+    new HtmlWebpackPlugin({ template: path.join(PATHS.src, 'index.html') })
   ]
 }
